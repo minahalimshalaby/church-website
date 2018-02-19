@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ScreenView from '../../components/ScreenView/ScreenView';
+import Main from '../../components/Main/Main';
 
 class HomePage extends Component {
 
@@ -7,7 +8,11 @@ class HomePage extends Component {
     return (
       <ScreenView>
 
-        
+        <Main>
+
+          sadasdad
+
+        </Main>
 
       </ScreenView>
     );
