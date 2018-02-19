@@ -1,0 +1,48 @@
+.Navigation {
+  margin-top: 35px
+}
+.Navigation__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0px 30px;
+  cursor: pointer;
+}
+.Navigation__item:not(:last-child) {
+  /* border-bottom: 1px solid #ddd; */
+}
+.Navigation__item:hover {
+  background-color: #fff;
+}
+.Navigation__text {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.Navigation__icon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+}
+.Navigation__item[data-type="home"] .Navigation__icon {
+  background-image: url('./images/home-icon-black.png');
+}
+.Navigation__item[data-type="our_ministries"] .Navigation__icon {
+  background-image: url('./images/ministries-icon-black.png');
+}
+.Navigation__item[data-type="sermons"] .Navigation__icon {
+  background-image: url('./images/sermons-icon-black.png');
+}
+.Navigation__item[data-type="about"] .Navigation__icon {
+  background-image: url('./images/about-icon-black.png');
+}
+.Navigation__item[data-type="contact"] .Navigation__icon {
+  background-image: url('./images/contact-icon-black.png');
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Sidebar.css';
 
 import Hamburger from '../Hamburger/Hamburger';
+import Navigation from '../Navigation/Navigation';
 
 class Sidebar extends Component {
 
@@ -13,6 +14,8 @@ class Sidebar extends Component {
           <Hamburger />
           <div className="Sidebar__logo" />
         </div>
+
+        <Navigation />
 
       </div>
     );
