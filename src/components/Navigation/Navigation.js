@@ -7,10 +7,12 @@ class Navigation extends Component {
     return (
       <div className="Navigation">
       
-        <div className="Navigation__item" data-type="home">
+        {
+        /* <div className="Navigation__item" data-type="home">
           <div className="Navigation__icon" />
           <div className="Navigation__text">Home</div>
-        </div>
+        </div> */
+        }
       
         <div className="Navigation__item" data-type="our_ministries">
           <div className="Navigation__icon" />
