@@ -16,6 +16,10 @@
   height: 30px;
   transition: all 0.5s ease 0s;
 }
+.Hamburger--active .Hamburger__icon {
+  transform: rotate(90deg);
+}
+
 .Hamburger__bar {
   position: relative;
   width: 100%;
@@ -40,9 +44,6 @@
   left: 5px;
 }
 
-.Hamburger--active .Hamburger__icon {
-  transform: rotate(90deg);
-}
 .Hamburger--active .Hamburger__bar {
   left: 0px;
   margin-bottom: 0px;
