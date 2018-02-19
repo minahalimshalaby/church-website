@@ -1,0 +1,67 @@
+.Hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;;
+  cursor: pointer;
+}
+.Hamburger__icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s ease 0s;
+}
+.Hamburger__bar {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #000;
+  opacity: 0.5;
+  transition: transform 0.25s ease 0s, 
+              margin 0.25s ease 0.5s, 
+              opacity 0.25s ease 0.5s,
+              top 0.25s ease 0.5s,
+              left 0.25s ease 0.5s,
+              height 0s ease 0.5s;
+}
+.Hamburger__bar:not(:last-child) {
+  margin-bottom: 5px;
+}
+.Hamburger__bar:nth-child(1) {
+  left: -5px;
+}
+.Hamburger__bar:nth-child(2) {
+  left: 5px;
+}
+
+.Hamburger--active .Hamburger__icon {
+  transform: rotate(90deg);
+}
+.Hamburger--active .Hamburger__bar {
+  left: 0px;
+  margin-bottom: 0px;
+  transition: transform 0.5s ease 0.25s, 
+              margin 0.5s ease 0s, 
+              opacity 0.5s ease 0s,
+              top 0.5s ease 0.5s,
+              left 0.5s ease 0s,
+              height 0s ease 0s;
+}
+.Hamburger--active .Hamburger__bar:nth-child(1) {
+  top: 1.5px;
+  transform: rotate(45deg);
+}
+.Hamburger--active .Hamburger__bar:nth-child(2) {
+  height: 0;
+  opacity: 0;
+}
+.Hamburger--active .Hamburger__bar:nth-child(3) {
+  top: -1.5px;
+  transform: rotate(-45deg);
+}
