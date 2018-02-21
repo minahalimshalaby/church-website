@@ -1,0 +1,22 @@
+.Header {
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+.Header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 50px;
+}
+.Header__logo {
+  width: 240px;
+  height: 65px;
+  background-image: url('./images/logo_tm_white_long.png');
+  background-size: auto 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  filter: invert(1.0);
+}
