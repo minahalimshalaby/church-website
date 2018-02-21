@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ScreenView from '../../components/ScreenView/ScreenView';
 import Main from '../../components/Main/Main';
+import Cover from '../../components/Cover/Cover';
 
 class HomePage extends Component {
 
@@ -10,6 +11,8 @@ class HomePage extends Component {
 
         <Main>
           
+          <Cover video="https://www.youtube.com/embed/bMJ7KwqiO8c" />
+          {/* <Cover video="https://www.youtube.com/embed/66tM1eDjAqI" /> */}
 
         </Main>
 
