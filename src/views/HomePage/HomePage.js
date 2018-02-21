@@ -9,8 +9,7 @@ class HomePage extends Component {
       <ScreenView>
 
         <Main>
-
-          sadasdad
+          
 
         </Main>
 
