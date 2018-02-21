@@ -14,6 +14,11 @@ class Navigation extends Component {
         </div> */
         }
       
+        <div className="Navigation__item Navigation__item--active" data-type="our_ministries">
+          <div className="Navigation__icon" />
+          <div className="Navigation__text">Home</div>
+        </div>
+      
         <div className="Navigation__item" data-type="our_ministries">
           <div className="Navigation__icon" />
           <div className="Navigation__text">Our Ministries</div>
@@ -22,6 +27,11 @@ class Navigation extends Component {
         <div className="Navigation__item" data-type="sermons">
           <div className="Navigation__icon" />
           <div className="Navigation__text">Sermons</div>
+        </div>
+        
+        <div className="Navigation__item" data-type="sermons">
+          <div className="Navigation__icon" />
+          <div className="Navigation__text">Online Giving</div>
         </div>
         
         <div className="Navigation__item" data-type="about">
