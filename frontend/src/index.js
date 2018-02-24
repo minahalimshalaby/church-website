@@ -1,8 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import ReduxThunk from 'redux-thunk';
+import Reducers from './redux/reducers';
+
+import HomePage from './views/HomePage/HomePage';
+
+import './index.css';
+import Sidebar from './components/Sidebar/Sidebar';
+
+const ReduxStore = createStore(Reducers, applyMiddleware(ReduxThunk));
+
+ReactDOM.render(
+  <Provider store={ ReduxStore }>
+    <Router>
+      <div className="App">
+
+        <Sidebar />
+
+        <Route exact path="/" component={ HomePage } />
+
+      </div>
+    </Router>
+  </Provider>,
+  document.getElementById('root')
+);
