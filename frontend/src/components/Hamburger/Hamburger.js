@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { toggleSidebar } from '../../redux/actions';
 import './Hamburger.css';
 
 class Hamburger extends Component {
 
-  state = {
-    active: false,
-  }
-
   toggleActive = () => {
-    this.setState({
-      active: !this.state.active
-    });
+    this.props.toggleSidebar(!this.props.active);
   }
 
   render() {
-    const className = 'Hamburger' + ((this.state.active) ? ' Hamburger--active' : '');
+    const className = 'Hamburger' + ((this.props.active) ? ' Hamburger--active' : '');
     return (
       <div className={ className } onClick={ this.toggleActive } >
         <div className="Hamburger__icon">
@@ -28,4 +24,12 @@ class Hamburger extends Component {
 
 }
 
-export default Hamburger;
+const mapStateToProps = state => {
+  return state.sidebar;
+}
+
+const mapDispatchToProps = {
+  toggleSidebar,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Hamburger);

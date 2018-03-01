@@ -1,18 +1,20 @@
 .Hamburger {
+  position: fixed;
+  top: 45px;
+  left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 135px;
-  height: 75px;;
-  border-top-right-radius: calc(75px / 2);
-  border-bottom-right-radius: calc(75px / 2);
+  height: 75px;
   background-color: transparent;
   cursor: pointer;
+  z-index: 9999;
   transition: background 0.25s linear 0s;
 }
 .Hamburger:hover,
 .Hamburger--active {
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 .Hamburger__icon {
   position: relative;
