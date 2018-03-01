@@ -14,14 +14,18 @@
   padding: 0px 50px;
 }
 .Header__logo {
-  width: 240px;
+  width: 354px;
   height: 65px;
   background-image: url('./images/logo_tm_white_long.png');
   background-size: auto 100%;
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
 }
-
-.Header__logo {
-  /* filter: invert(1.0); */
+.Header__logo--text-only {
+  width: 240px;
+  background-position: center right;
+}
+.Header__logo--logo-only {
+  width: 100px;
+  background-position: center left;
 }
