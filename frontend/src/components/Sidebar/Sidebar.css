@@ -8,11 +8,19 @@
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   z-index: 999;
+  margin-left: -400px;
+  opacity: 0;
+  transition: margin 0.5s linear 0s, opacity 0.25s linear 0s;
+}
+.Sidebar--active {
+  margin-left: 0px;
+  opacity: 1.0;
+  transition: margin 0.5s linear 0s, opacity 0.5s linear 0.35s;
 }
 .Sidebar__header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 150px;
   padding: 0px 50px 0px 0px;
@@ -20,6 +28,7 @@
 }
 
 .Sidebar__logo {
+  display: none;
   width: 100px;
   height: 60px;
   background-image: url('./images/logo_tm.png');
