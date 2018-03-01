@@ -1,3 +1,9 @@
 .Main {
+  height: 100vh;
+  margin-left: 135px;
+  background-color: #444;
+  transition: margin 0.25s linear 0s;
+}
+.Main--sidebar-open {
   margin-left: 400px;
 }
