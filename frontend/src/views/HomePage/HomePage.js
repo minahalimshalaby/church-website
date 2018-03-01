@@ -11,7 +11,7 @@ class HomePage extends Component {
 
         <Main>
           
-          <Cover video="https://www.youtube.com/embed/bMJ7KwqiO8c" />
+          {/* <Cover video="https://www.youtube.com/embed/bMJ7KwqiO8c" /> */}
           {/* <Cover video="https://www.youtube.com/embed/66tM1eDjAqI" /> */}
 
         </Main>
