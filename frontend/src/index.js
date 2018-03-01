@@ -12,6 +12,7 @@ import HomePage from './views/HomePage/HomePage';
 
 import './index.css';
 import Sidebar from './components/Sidebar/Sidebar';
+import Hamburger from './components/Hamburger/Hamburger';
 
 const ReduxStore = createStore(Reducers, applyMiddleware(ReduxThunk));
 
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Router>
       <div className="App">
 
+        <Hamburger />
         <Sidebar />
 
         <Route exact path="/" component={ HomePage } />
