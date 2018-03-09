@@ -13,7 +13,9 @@ class HomePage extends Component {
           
           {/* <Cover video="https://www.youtube.com/embed/bMJ7KwqiO8c" /> */}
           {/* <Cover video="https://www.youtube.com/embed/66tM1eDjAqI" /> */}
-          <Cover image="https://img.youtube.com/vi/66tM1eDjAqI/maxresdefault.jpg" />
+          {/* <Cover image="https://img.youtube.com/vi/66tM1eDjAqI/maxresdefault.jpg" /> */}
+          {/* <Cover image="https://i.imgur.com/otNZnRFh.png" /> */}
+          <Cover image="http://www.ipachicago.org/wp-content/uploads/2017/10/church_image.png" />
 
         </Main>
 

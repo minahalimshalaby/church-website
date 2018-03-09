@@ -20,6 +20,7 @@ ReactDOM.render(
   <Provider store={ ReduxStore }>
     <Router>
       <div className="App">
+        <div className="App--bg" />
 
         <Hamburger />
         <Sidebar />
