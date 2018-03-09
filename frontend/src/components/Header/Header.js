@@ -8,6 +8,10 @@ class Header extends Component {
       <div className="Header">
         <div className="Header__wrapper">
           <div className="Header__logo" />
+          <button
+            className="Header__button Header__button--donate">
+            Donate
+          </button>
         </div>
       </div>
     );
