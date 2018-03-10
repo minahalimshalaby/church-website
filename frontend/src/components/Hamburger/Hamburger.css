@@ -1,11 +1,11 @@
 .Hamburger {
   position: fixed;
-  top: 45px;
+  top: 30px;
   left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 135px;
+  width: 125px;
   height: 75px;
   background-color: transparent;
   cursor: pointer;
@@ -39,7 +39,7 @@
               height 0s ease-in-out 0.4s;
 }
 .Hamburger__bar:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 6px;
 }
 .Hamburger__bar:nth-child(1) {
   left: -5px;

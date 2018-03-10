@@ -17,12 +17,8 @@ class Cover extends Component {
 
         <div className="Cover__content-overlay">
 
-          <div className="Cover__subtitle">
-            Welcome to IPA Chicago
-          </div>
-          <div className="Cover__title">
-            Let's worship together
-          </div>
+          <div className="Cover__subtitle">Welcome to IPA Chicago</div>
+          <div className="Cover__title">Let's worship together</div>
 
           <div className="Cover__buttons">
             <button className="Cover__button Cover__button--sermons">
