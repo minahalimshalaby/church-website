@@ -3,7 +3,7 @@
   height: 100vh;
   margin-left: 135px;
   background-color: #444;
-  transition: margin 0.25s linear 0s;
+  transition: margin 0.5s ease-in-out 0s;
 }
 .App[data-homepage="true"] .Main {
   width: 100%;

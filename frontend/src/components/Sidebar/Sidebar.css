@@ -10,12 +10,11 @@
   z-index: 999;
   margin-left: -400px;
   opacity: 0;
-  transition: margin 0.5s linear 0s, opacity 0.25s linear 0s;
+  transition: margin 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
 }
-.Sidebar--active {
+.App[data-sidebar-open="true"] .Sidebar {
   margin-left: 0px;
   opacity: 1.0;
-  transition: margin 0.5s linear 0s, opacity 0.5s linear 0.35s;
 }
 .Sidebar__header {
   display: flex;

@@ -10,7 +10,7 @@
   background-color: transparent;
   cursor: pointer;
   z-index: 9999;
-  transition: background 0.25s linear 0s;
+  transition: background 0.25s ease-in-out 0s;
 }
 .Hamburger__icon {
   position: relative;
@@ -20,7 +20,7 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  transition: all 0.5s ease 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .Hamburger__bar {
@@ -30,13 +30,13 @@
   border-radius: 1.5px;
   background-color: #000;
   opacity: 0.5;
-  transition: transform 0.25s linear 0s, 
-              background 0.25s linear 0s,
-              margin 0.25s linear 0.5s, 
-              opacity 0.25s linear 0.5s,
-              top 0.25s linear 0.5s,
-              left 0.25s linear 0.5s,
-              height 0s linear 0.5s;
+  transition: transform 0.25s ease-in-out 0s, 
+              background 0.25s ease-in-out 0s,
+              margin 0.25s ease-in-out 0.35s, 
+              opacity 0.25s ease-in-out 0.4s,
+              top 0.25s ease-in-out 0.4s,
+              left 0.25s ease-in-out 0.4s,
+              height 0s ease-in-out 0.4s;
 }
 .Hamburger__bar:not(:last-child) {
   margin-bottom: 7px;
@@ -55,12 +55,13 @@
 .App[data-sidebar-open="true"] .Hamburger__bar {
   left: 0px;
   margin-bottom: 0px;
-  transition: transform 0.25s linear 0.25s, 
-              margin 0.25s linear 0s, 
-              opacity 0.25s linear 0s,
-              top 0.25s linear 0.25s,
-              left 0.25s linear 0s,
-              height 0s linear 0s;
+  transition: transform 0.25s ease-in-out 0.25s,
+              background 0.25s ease-in-out 0s,
+              margin 0.25s ease-in-out 0s, 
+              opacity 0.25s ease-in-out 0s,
+              top 0.25s ease-in-out 0.25s,
+              left 0.25s ease-in-out 0s,
+              height 0s ease-in-out 0s;
 }
 .App[data-homepage="true"] .Hamburger__bar {
   background-color: #fff;
