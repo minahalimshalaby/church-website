@@ -8,25 +8,15 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import Reducers from './redux/reducers';
 
-import HomePage from './views/HomePage/HomePage';
-
+import App from './App.js';
 import './index.css';
-import Sidebar from './components/Sidebar/Sidebar';
-import Hamburger from './components/Hamburger/Hamburger';
 
 const ReduxStore = createStore(Reducers, applyMiddleware(ReduxThunk));
 
 ReactDOM.render(
   <Provider store={ ReduxStore }>
     <Router>
-      <div className="App">
-
-        <Route path="/" component={ Hamburger } />
-        <Route path="/" component={ Sidebar } />
-
-        <Route exact path="/" component={ HomePage } />
-
-      </div>
+      <Route path="/" component={ App } />
     </Router>
   </Provider>,
   document.getElementById('root')

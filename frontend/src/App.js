@@ -1,21 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { updateHistory } from './redux/actions';
+
 import './App.css';
 
+import Hamburger from './components/Hamburger/Hamburger';
+import Sidebar from './components/Sidebar/Sidebar';
+import HomePage from './views/HomePage/HomePage';
+
 class App extends Component {
+
+  componentWillMount() {
+    this.props.updateHistory(this.props.history);
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="App"
+        data-homepage={ this.props.history.location.pathname === '/' }
+        data-sidebar-open={ this.props.sidebar.active } >
+
+        <Route path="/" component={ Hamburger } />
+        <Route path="/" component={ Sidebar } />
+
+        <Route exact path="/" component={ HomePage } />
+
       </div>
     );
   }
+
 }
 
-export default App;
+const mapStateToProps = state => {
+  return state;
+};
+
+const mapDispatchToProps = {
+  updateHistory,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
