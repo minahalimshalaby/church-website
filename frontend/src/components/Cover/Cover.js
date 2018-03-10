@@ -17,7 +17,8 @@ class Cover extends Component {
     else if (this.props.image !== undefined) {
 
       const image = this.props.image;
-      media.push(<div className="Cover__media Cover__media--image" style={{ backgroundImage: `url(${ image })` }} />);
+      media.push(<div className="Cover__media Cover__media--image Cover__media--staticImage" style={{ backgroundImage: `url(${ image })` }} />);
+      media.push(<div className="Cover__media Cover__media--image Cover__media--blurredImage" style={{ backgroundImage: `url(${ image })` }} />);
       
     }
 
@@ -27,6 +28,26 @@ class Cover extends Component {
         <div className="Cover__overlay Cover__overlay--gradient-top-bottom" />
         <div className="Cover__overlay Cover__overlay--gradient-diagonal" />
         <div className="Cover__overlay" />
+        <div className="Cover__content-overlay">
+
+          <div className="Cover__subtitle">
+            Welcome to IPA Chicago
+          </div>
+          <div className="Cover__title">
+            Let's worship together
+          </div>
+          <div className="Cover__buttons">
+            <button
+              className="Cover__button Cover__button--sermons">
+              Sermons
+            </button>
+            <button
+              className="Cover__button Cover__button--ministries">
+              Get Involved
+            </button>
+          </div>
+
+        </div>
         {/* <div className="Cover__action">
           <button>Play w/ sound</button>
         </div> */}

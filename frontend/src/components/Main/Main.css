@@ -5,6 +5,10 @@
   background-color: #444;
   transition: margin 0.25s linear 0s;
 }
+.Main[data-page="homepage"] {
+  width: 100%;
+  margin-left: 0px;
+}
 .Main--sidebar-open {
-  margin-left: 400px;
+  margin-left: 400px !important;
 }

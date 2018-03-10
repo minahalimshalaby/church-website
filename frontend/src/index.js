@@ -20,10 +20,9 @@ ReactDOM.render(
   <Provider store={ ReduxStore }>
     <Router>
       <div className="App">
-        <div className="App--bg" />
 
-        <Hamburger />
-        <Sidebar />
+        <Route path="/" component={ Hamburger } />
+        <Route path="/" component={ Sidebar } />
 
         <Route exact path="/" component={ HomePage } />
 

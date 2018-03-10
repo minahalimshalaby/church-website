@@ -4,7 +4,7 @@
   height: 100vh;
   margin-top: -150px;
   overflow: hidden;
-  background-color: #4e342e;
+  background-color: #263238;
 }
 .Cover__media {
   position: absolute;
@@ -16,6 +16,8 @@
   min-width: 100%;
   box-sizing: border-box;
   object-fit: cover;
+  backface-visibility: hidden;
+  filter: grayscale(1) opacity(0.5);
 }
 .Cover__media--video {
   top: 50%;
@@ -26,9 +28,33 @@
 }
 .Cover__media--image {
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
+.Cover__media--staticImage {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  opacity: 1.0;
+}
+.Cover__media--blurredImage {
+  filter: grayscale(1) opacity(1) blur(100px);
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+@keyframes fadeOut {
+  from { opacity: 1.0; }
+  to { opacity: 0; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1.0; }
+}
+
 
 .Cover__overlay {
   position: absolute;
@@ -36,7 +62,8 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
+  /* background-color: rgba(0, 0, 0, 0.35); */
+  background-color: rgba(38, 50, 56, 0.6);
 }
 .Cover__overlay--gradient-diagonal {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
@@ -77,4 +104,64 @@
   background-color: #222;
   opacity: 0.75;
   cursor: pointer;
+}
+
+
+.Cover__content-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Cover__subtitle {
+  color: #ffc107;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  letter-spacing: 3px;
+  margin-top: 150px;
+  margin-bottom: 5px;
+}
+.Cover__title {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  letter-spacing: 1.5px;
+  margin-bottom: 35px;
+}
+.Cover__button {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0px 0px;
+  padding: 12px 35px;
+  background-color: transparent;
+  transition: color 0.25s ease 0s, background 0.25s ease 0s;
+  cursor: pointer;
+}
+.Cover__button--sermons,
+.Cover__button--ministries {
+  color: #000;
+  background-color: #fff;
+}
+.Cover__button--ministries {
+  margin-left: 10px;
+}
+.Cover__button--sermons:hover,
+.Cover__button--ministries:hover {
+  color: #fff;
+  background-color: transparent;
 }
