@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Sidebar.css';
 
-import Hamburger from '../Hamburger/Hamburger';
 import Navigation from '../Navigation/Navigation';
 
 class Sidebar extends Component {
