@@ -7,10 +7,40 @@
   justify-content: space-between;
   justify-content: flex-end;
   align-items: center;
-  height: 75px;
+  position: relative;
+  height: 65px;
   padding: 0px 50px;
   cursor: pointer;
 }
+.App[data-sidebar-open="false"] .Navigation__item {
+  left: -400px;
+  opacity: 0;
+  transition: left 0.25s ease-in-out 0.5s, opacity 0.25s ease-in-out 0.5s;
+}
+.App[data-sidebar-open="true"] .Navigation__item {
+  left: 0px;
+  opacity: 1.0;
+}
+.App[data-sidebar-open="true"] .Navigation__item:nth-child(1) {
+  transition: left 0.25s ease-in-out 0.75s, opacity 0.5s ease-in-out 0.75s;
+}
+.App[data-sidebar-open="true"] .Navigation__item:nth-child(2) {
+  transition: left 0.25s ease-in-out 0.85s, opacity 0.5s ease-in-out 0.85s;
+}
+.App[data-sidebar-open="true"] .Navigation__item:nth-child(3) {
+  transition: left 0.25s ease-in-out 0.95s, opacity 0.5s ease-in-out 0.95s;
+}
+.App[data-sidebar-open="true"] .Navigation__item:nth-child(4) {
+  transition: left 0.25s ease-in-out 1.05s, opacity 0.5s ease-in-out 1.05s;
+}
+.App[data-sidebar-open="true"] .Navigation__item:nth-child(5) {
+  transition: left 0.25s ease-in-out 1.15s, opacity 0.5s ease-in-out 1.15s;
+}
+.App[data-sidebar-open="true"] .Navigation__item:nth-child(6) {
+  transition: left 0.25s ease-in-out 1.25s, opacity 0.5s ease-in-out 1.25s;
+}
+
+
 .Navigation__item:not(:first-child) {
   border-top: 1px solid #fff;
 }
@@ -22,7 +52,7 @@
 }
 
 .Navigation__text {
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 0.5px;
