@@ -13,7 +13,7 @@
   width: 100%;
   padding: 0px 50px;
 }
-.Header[data-page="homepage"] > .Header__wrapper {
+.App[data-homepage="true"] .Header > .Header__wrapper {
   padding: 0px 50px 0px 125px;
 }
 .Header__logo {

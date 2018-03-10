@@ -5,10 +5,10 @@
   background-color: #444;
   transition: margin 0.25s linear 0s;
 }
-.Main[data-page="homepage"] {
+.App[data-homepage="true"] .Main {
   width: 100%;
   margin-left: 0px;
 }
-.Main--sidebar-open {
+.App[data-sidebar-open="true"] .Main {
   margin-left: 400px !important;
 }

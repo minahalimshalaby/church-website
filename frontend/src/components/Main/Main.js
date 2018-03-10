@@ -8,15 +8,8 @@ class Main extends Component {
 
   render() {
 
-    const { pathname } = this.props.history.location;
-    const pageId = (pathname === '/') ? 'homepage' : pathname;
-
-    const className = 'Main' + ((this.props.active) ? ' Main--sidebar-open' : '');
-
     return (
-      <div
-        className={ className }
-        data-page={ pageId }>
+      <div className="Main">
         <Header />
         { this.props.children }
       </div>
@@ -26,7 +19,7 @@ class Main extends Component {
 }
 
 const mapStateToProps = state => {
-  return state.sidebar;
+  return state;
 }
 
 export default connect(mapStateToProps, {  })(Main);
