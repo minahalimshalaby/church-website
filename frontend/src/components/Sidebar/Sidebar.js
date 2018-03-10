@@ -8,9 +8,8 @@ import Navigation from '../Navigation/Navigation';
 class Sidebar extends Component {
 
   render() {
-    const className = 'Sidebar' + ((this.props.active) ? ' Sidebar--active' : '');
     return (
-      <div className={ className }>
+      <div className="Sidebar">
 
         <div className="Sidebar__header">
           <div className="Sidebar__logo" />
