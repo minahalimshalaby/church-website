@@ -12,17 +12,13 @@
   cursor: pointer;
 }
 .Navigation__item:not(:first-child) {
-  /* border-top: 1px solid #fff; */
   border-top: 1px solid #fff;
 }
-.Navigation__item:not(:last-child) {
-  /* border-bottom: 1px solid #eee; */
-}
 .Navigation__item--active {
-  background-color: rgba(141, 110, 99, 0.15);
+  background-color: rgba(38, 50, 56, 0.1);
 }
-.Navigation__item:hover {
-  background-color: rgba(141, 110, 99, 0.1);
+.Navigation__item:not(.Navigation__item--active):hover {
+  background-color: rgba(38, 50, 56, 0.075);
 }
 
 .Navigation__text {
@@ -64,4 +60,3 @@
 .Navigation__item[data-type="contact"] .Navigation__icon {
   background-image: url('./images/contact-icon-black.png');
 }
-
