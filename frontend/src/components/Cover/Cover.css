@@ -32,18 +32,19 @@
   background-repeat: no-repeat;
 }
 .Cover__media--staticImage {
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-delay: 0s;
-  animation-timing-function: linear;
+  animation-name: fadeIn, zoomOut;
+  animation-iteration-count: 1, 1;
+  animation-duration: 2s, 2s;
+  animation-delay: 0s, 0s;
+  animation-timing-function: ease, ease;
   opacity: 1.0;
 }
 .Cover__media--blurredImage {
   filter: grayscale(1) opacity(1) blur(100px);
   animation-name: fadeOut;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-delay: 0s;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
   opacity: 0;
 }
 @keyframes fadeOut {
@@ -53,6 +54,10 @@
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1.0; }
+}
+@keyframes zoomOut {
+  from { transform: scale(2.0); }
+  to { transform: scale(1.0); }
 }
 
 
@@ -120,9 +125,9 @@
 }
 .Cover__subtitle {
   color: #ffc107;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   letter-spacing: 3px;
