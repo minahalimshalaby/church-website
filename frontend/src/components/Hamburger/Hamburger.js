@@ -6,18 +6,20 @@ import './Hamburger.css';
 class Hamburger extends Component {
 
   toggleActive = () => {
-    this.props.toggleSidebar(!this.props.active);
+    this.props.toggleSidebar(!this.props.sidebar.active);
   }
 
   render() {
-    const className = 'Hamburger' + ((this.props.active) ? ' Hamburger--active' : '');
     return (
-      <div className={ className } onClick={ this.toggleActive } >
+      <div className="Hamburger"
+        onClick={ this.toggleActive } >
+
         <div className="Hamburger__icon">
           <div className="Hamburger__bar" />
           <div className="Hamburger__bar" />
           <div className="Hamburger__bar" />
         </div>
+
       </div>
     );
   }
@@ -25,7 +27,7 @@ class Hamburger extends Component {
 }
 
 const mapStateToProps = state => {
-  return state.sidebar;
+  return state;
 }
 
 const mapDispatchToProps = {
