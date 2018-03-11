@@ -1,0 +1,51 @@
+.PrimaryInformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+}
+
+.PrimaryInformation__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px 15px;
+}
+.PrimaryInformation__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  margin-top: -20px;
+}
+.PrimaryInformation__icon--location {
+  background-image: url("./images/placeholder.png");
+}
+.PrimaryInformation__icon--timing {
+  background-image: url("./images/clock.png");
+}
+.PrimaryInformation__text {
+  font-family: 'Roboto', sans-serif;
+}
+.PrimaryInformation__label {
+  color: #ffc000;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px
+}
+.PrimaryInformation__value {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
