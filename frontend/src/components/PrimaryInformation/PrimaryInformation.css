@@ -15,6 +15,10 @@
   align-items: flex-start;
   width: 50%;
   max-width: 640px;
+  padding: 50px 0px 25px 0px;
+}
+.PrimaryInformation__item:not(:first-child) {
+  border-left: 1px dashed rgba(255, 255, 255, 0.15);
 }
 .PrimaryInformation__icon {
   width: 50px;
@@ -31,6 +35,9 @@
 }
 .PrimaryInformation__icon--timing {
   background-image: url("./images/clock.png");
+}
+.PrimaryInformation__icon--prayerline {
+  background-image: url("./images/phone.png");
 }
 .PrimaryInformation__text {
   font-family: 'Roboto', sans-serif;

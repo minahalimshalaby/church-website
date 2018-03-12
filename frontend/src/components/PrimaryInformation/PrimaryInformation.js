@@ -28,6 +28,17 @@ class PrimaryInformation extends Component {
             </div>
           </div>
         </div>
+
+        <div className="PrimaryInformation__item">
+          <div className="PrimaryInformation__icon PrimaryInformation__icon--prayerline" />
+          <div className="PrimaryInformation__text">
+            <div className="PrimaryInformation__label">Prayerline</div>
+            <div className="PrimaryInformation__value">
+              Call 1-712-432-8399<br/>
+              Access Code: 158428#
+            </div>
+          </div>
+        </div>
         
       </div>
     );
