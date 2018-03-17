@@ -1,7 +1,7 @@
 .Cover {
   position: relative;
   width: 100%;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 175px);
   min-height: 500px;
   overflow: hidden;
   background-color: #263238;
@@ -134,9 +134,10 @@
   word-spacing: 1px;
   margin-top: 150px;
   margin-bottom: 5px;
+  transform: scaleY(0.9);
 }
 .Cover__subtitle-bold {
-  font-weight: 700;
+  font-weight: 500;
 }
 .Cover__title {
   color: #fff;
