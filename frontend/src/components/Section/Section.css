@@ -1,0 +1,11 @@
+.Section {
+  background-color: #fff;
+}
+.Section:not([padding="none"]) {
+  padding: 100px 0px;
+}
+.Section__wrapper {
+  position: relative;
+  max-width: 2000px;
+  margin: 0px auto;
+}
