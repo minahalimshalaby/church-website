@@ -1,6 +1,7 @@
 .ContactInfo {
   position: relative;
   width: 50%;
+  height: 100vh;
   min-height: 640px;
   background-color: #eee;
   overflow: hidden;
@@ -39,7 +40,7 @@
 }
 .ContactInfo__content {
   position: relative;
-  padding: 75px;
+  padding: 100px 75px;
 }
 
 h2 {
