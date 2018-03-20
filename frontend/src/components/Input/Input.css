@@ -61,6 +61,7 @@ textarea.Input__input {
 }
 textarea.Input__input {
   min-height: 75px;
+  max-height: 150px;
   resize: vertical;
 }
 
