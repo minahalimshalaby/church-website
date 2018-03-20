@@ -1,0 +1,90 @@
+.Button {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 0px 0px;
+  padding: 12px 35px;
+  transition: color 0.25s ease-in-out 0s, 
+              background 0.25s ease-in-out 0s,
+              border 0.25s ease-in-out 0s;
+  cursor: pointer;
+}
+.Button[data-style="whiteOutline"],
+.Button[data-style="whiteFill"]:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+.Button[data-style="whiteFill"],
+.Button[data-style="whiteOutline"]:hover {
+  color: #333;
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+
+.Button[data-style="darkOutline"],
+.Button[data-style="darkFill"]:hover {
+  color: #333;
+  border: 2px solid #333;
+  background-color: transparent;
+}
+.Button[data-style="darkFill"],
+.Button[data-style="darkOutline"]:hover {
+  color: #fff;
+  border: 2px solid #333;
+  background-color: #333;
+}
+
+.Button[data-style="yellowOutline"],
+.Button[data-style="yellowFill"]:hover {
+  color: #ffc000;
+  border: 2px solid #ffc000;
+  background-color: transparent;
+}
+.Button[data-style="yellowFill"],
+.Button[data-style="yellowFill"]:hover,
+.Button[data-style="yellowOutline"]:hover {
+  color: #333;
+  border: 2px solid #ffc000;
+  background-color: #ffc000;
+}
+
+.Button[data-style="whiteOutline"]:active,
+.Button[data-style="darkOutline"]:active {
+  color: #333;
+  border: 2px solid #ffc000;
+  background-color: #ffc000;
+  transition: color 0.1s ease-in-out 0s, 
+              background 0.1s ease-in-out 0s,
+              border 0.1s ease-in-out 0s;
+}
+.Button[data-style="whiteFill"]:active,
+.Button[data-style="darkFill"]:active {
+  color: #ffc000;
+  border: 2px solid #ffc000;
+  background-color: transparent;
+  transition: color 0.1s ease-in-out 0s, 
+              background 0.1s ease-in-out 0s,
+              border 0.1s ease-in-out 0s;
+}
+
+.Button[data-style="yellowFill"]:active {
+  color: #333;
+  border: 2px solid #333;
+  background-color: transparent;
+  transition: color 0.1s ease-in-out 0s, 
+              background 0.1s ease-in-out 0s,
+              border 0.1s ease-in-out 0s;
+}
+.Button[data-style="yellowOutline"]:active {
+  color: #ffc000;
+  border: 2px solid #333;
+  background-color: #333;
+  transition: color 0.1s ease-in-out 0s, 
+              background 0.1s ease-in-out 0s,
+              border 0.1s ease-in-out 0s;
+}
