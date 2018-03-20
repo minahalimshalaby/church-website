@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 175px;
-  background-color: #e5e5e5;
+  height: 174px;
+  border-bottom: 1px solid rgba(38, 50, 56, 0.15);
 }
 
 .PrimaryInformation__item {
@@ -14,18 +14,20 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  max-width: 640px;
   height: 100%;
   transition: background 0.25s ease-in-out 0s;
 }
 .PrimaryInformation__item:nth-child(1) {
   background-color: #eee;
+  background-color: rgba(38, 50, 56, 0.075);
 }
 .PrimaryInformation__item:nth-child(2) {
   background-color: #e5e5e5;
+  background-color: rgba(38, 50, 56, 0.1);
 }
 .PrimaryInformation__item:nth-child(3) {
   background-color: #ddd;
+  background-color: rgba(38, 50, 56, 0.125);
 }
 .PrimaryInformation__item:not(:first-child) {
   /* border-left: 1px solid rgba(0, 0, 0, 0.05); */
