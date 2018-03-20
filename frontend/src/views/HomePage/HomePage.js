@@ -6,6 +6,7 @@ import Section from '../../components/Section/Section';
 
 import Cover from '../../components/Cover/Cover';
 import PrimaryInformation from '../../components/PrimaryInformation/PrimaryInformation';
+import ContactSection from '../../components/ContactSection/ContactSection';
 
 class HomePage extends Component {
 
@@ -16,8 +17,12 @@ class HomePage extends Component {
           
           <Cover image="http://www.ipachicago.org/wp-content/uploads/2017/10/church_image.png" />
           
-          <Section>
+          <Section padding="none">
             <PrimaryInformation />
+          </Section>
+
+          <Section padding="none">
+            <ContactSection />
           </Section>
 
         </Main>
