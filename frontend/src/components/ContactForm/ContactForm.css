@@ -1,0 +1,26 @@
+.ContactForm {
+  width: 50%;
+  min-height: 500px;
+  background-color: #fff;
+}
+.ContactForm__content {
+  padding: 75px;
+}
+
+.ContactForm__row {
+  display: flex;
+  flex-direction: row;
+  margin: 0px -10px;
+}
+.ContactForm__row > .Input {
+  width: 100%;
+}
+.ContactForm__row--double > .Input {
+  width: 50%;
+}
+.ContactForm__row--buttons {
+  margin: 10px 0px 0px 0px;
+}
+.ContactForm__row--buttons button {
+  min-width: 200px;
+}
