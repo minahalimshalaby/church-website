@@ -1,0 +1,4 @@
+.ContactSection {
+  display: flex;
+  flex-direction: row;
+}
