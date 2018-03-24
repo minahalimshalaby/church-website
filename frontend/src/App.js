@@ -5,7 +5,6 @@ import { updateHistory } from './redux/actions';
 
 import './App.css';
 
-import Hamburger from './components/Hamburger/Hamburger';
 import Sidebar from './components/Sidebar/Sidebar';
 import HomePage from './views/HomePage/HomePage';
 
@@ -21,9 +20,7 @@ class App extends Component {
         data-homepage={ this.props.history.location.pathname === '/' }
         data-sidebar-open={ this.props.sidebar.active } >
 
-        <Route path="/" component={ Hamburger } />
         <Route path="/" component={ Sidebar } />
-
         <Route exact path="/" component={ HomePage } />
 
       </div>

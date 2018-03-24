@@ -1,8 +1,7 @@
 .Hamburger {
   position: fixed;
-  position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 17px;
+  right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;

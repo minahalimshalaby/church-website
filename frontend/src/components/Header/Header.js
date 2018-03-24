@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
+import Hamburger from '../Hamburger/Hamburger';
 
 class Header extends Component {
 
@@ -13,6 +14,7 @@ class Header extends Component {
             Donate
           </button>
         </div>
+        <Hamburger />
       </div>
     );
   }

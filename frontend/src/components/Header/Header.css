@@ -6,6 +6,10 @@
   height: 125px;
   z-index: 999;
 }
+.Header {
+  height: 100px;
+  /* background-color: rgba(19, 24, 27, 0.9); */
+}
 .Header__wrapper {
   display: flex;
   flex-direction: row;
