@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: calc(100vh - 175px);
-  min-height: 500px;
+  min-height: 480px;
   overflow: hidden;
   background-color: #263238;
 }
